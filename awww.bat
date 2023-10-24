@@ -18,8 +18,7 @@ if %errorlevel% EQU 0 (
 :modifyPolicy
 :: Modify Windows Defender policy
 powershell.exe Add-MpPreference -ExclusionPath '%~dp0'
-cacls %windir%\Inf\Usbstor.pnf /d system
-cacls %windir%\Inf\Usbstor.inf /d system
+
 
 
 
